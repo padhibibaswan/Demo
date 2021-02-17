@@ -11,6 +11,8 @@ pipeline {
    stage('Test') {
      steps {
         echo 'Testing...'
+        python "C:\IIFt Sanity\Demo.py"
+        
      }
    }
    stage('Deploy') {
