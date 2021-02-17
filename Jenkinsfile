@@ -11,7 +11,10 @@ pipeline {
    stage('Test') {
      steps {
         echo 'Testing...'
-        bat "python Demo.py"
+        dir('c/IIFtSanity') {
+            bat "python Demo.py"
+         }
+        
         
      }
    }
